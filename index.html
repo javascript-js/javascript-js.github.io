@@ -1,0 +1,202 @@
+---
+layout: default
+cover: 'http://www.abisolutions.org.uk/website/images/ConferencesHR.jpg'
+---
+
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Library</p>
+                                        <li><a href="https://de.wikipedia.org/wiki/JavaScript">Javascript Wikipedia</a><br><br>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item active"> 
+                    Javascript</a>
+                    <a href="#" class="list-group-item">Category 2</a>
+                    <a href="#" class="list-group-item">Category 3</a>
+                </div>
+
+                Mini Tools
+                        <li><a href="http://jscompress.com/">Online Javascript Compression Tool </a>
+                        <li><a href="http://ddecode.com/hexdecoder/">Hex Decoder </a>
+                        <li><a href="http://dean.edwards.name/packer/">Online Javascript Packer</a>
+                          <br>
+                          Read about Javascript
+                        <li><a href="http://jsforcats.com/">Javascript for Cats</a>
+                        <li><a href="http://enable-javascript.com/">Enable Javascript</a>
+                        <li><a href="https://developer.mozilla.org/de/docs/Web/JavaScript">MDN JavaScript</a>
+
+                          <br><br>
+
+                           <div class="well">
+                    <h4>Tools</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="/arrays.html">Arrays</a>
+                                </li>
+                                <li><a href="/strings.html">Strings</a>
+                                </li>
+                                <li><a href="/values-and-variables.html">Values and variables</a>
+                                </li>
+                                <li><a href="/using-functions.html">Using functions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="/built-in-js-functions.html">Built in JS functions</a>
+                                </li>
+                                <li><a href="/download-new-js-functions.html">Download new JS functions</a>
+                                </li>
+                                <li><a href="/writing-new-functions.html">Writing new functions</a>
+                                </li>
+                                <li><a href="/loops.html">Loops</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+
+            <div class="col-md-9">
+<section id="archive">
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="site-heading">
+
+                <!--  <span class="subheading" id="textfloat">{{ page.description }}</span> -->
+                  <h2>JS Archive.</h2>
+                  Getting Started with Javascript.
+
+What am I learning? This is JavaScript (JS), a programming language. There are many languages, but JS has many uses and is easy to learn.
+
+What can we use JavaScript for?
+
+make websites respond to user interaction build apps and games (e.g. blackjack) access information on the Internet (e.g. find out the top trending words on Twitter by topic) organize and present data (e.g. automate spreadsheet work; data visualization)
+
+                  What is programming?
+
+Programming is like writing a list of instructions to the computer so it can do cool stuff with your information.
+
+Programs can’t yet make your bed, but they can do math, keep track of your bank account, or send a message to a friend.
+
+To do any of these actions, the program needs an input. You can ask for input with a prompt.
+
+Examples:
+                    {% for post in site.posts %}
+                     {% unless post.next %}
+                      <ul class="this">
+                      {% else %}
+                      {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                      {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
+                      {% if year != nyear %}
+                      </ul>
+                      <h2>{{ post.date | date: "%Y" }}</h2>
+                      <ul class="past">
+                      {% endif %}
+                      {% endunless %}
+                      <li><time>{{ post.date | date:"%d %b" }}</time> <a href="{{ post.url }}" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">{{ post.title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                      <!--    <hr class="small"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+         
+           <!--     <div class="well">
+
+                    <div class="text-right">
+                        <a class="btn btn-success">Leave a Review</a>
+                    </div>
+
+          
+
+        
+
+                </div> --> 
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- /.container -->
+  <!-- 
+<main class="site-main" role="main">
+  <div class="site-content inner-wide">
+
+ <div class="cover hero">
+      <div class="cover-bg" style="background-image: url('http://3.bp.blogspot.com/-PTty3CfTGnA/TpZOEjTQ_WI/AAAAAAAAAeo/KeKt_D5X2xo/s1600/js.jpg')"></div>
+      <div class="cover-content">
+        <div class="inner">
+          <div class="hero-wrap"><img src="http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-256.png" alt="logo">
+
+            <hr>
+            <p class="hero-text fade-in">
+
+             Hello, My Name is Lucas Gatsas, I'm a Student, Front -End Engineer, SYS-Admin & UI/UX - Designer based in the City of St. Gallen, Switzerland. <br>
+            Blogging here about Javascript & Code.</p>
+            <p class="subscribe"><a href="rss/" class="button light fade-in">Subscribe</a></p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    
+    <div class="post-grid"> 
+{% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
+{% for post in site.posts  %}
+
+        {% capture blogDate %}{{post.date | date: '%b %-d, %Y' }}{% endcapture %}
+        {% if blogDate >= currentDate %}
+
+                 {% if post.cover %}
+
+    <article class="post-inside post-inside grid-item post tag-music tag-science">
+      <div class="post-bg" style="background-image:url({{post.cover}});"></div>
+
+                          {% endif %}
+
+
+      <header class="post-header">
+        <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark">{{ post.title }} <span></span></a></h2>
+        <div class="post-meta">
+          by <span class="post-author"><a href="{{ site.baseurl }}/about">{{ site.title }} </a></span> on <time class="published" datetime="">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div>
+      </header>
+      <div class="read-more">
+        <a class="button light" href="{{ post.url | prepend: site.baseurl }}" title="Walking on Thin Ice">Read More</a>
+      </div>
+    </article>
+
+
+        {% endif %}
+
+      {% endfor %}
+
+
+</div>
+
+<nav class="pagination" role="navigation">
+</nav>
+
+    
+  </div>
+</main>  -->
+
+
+

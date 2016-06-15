@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	<!-- Hello World. 
+		My Name is Lucas Gatsas
+		
+		Theme: blog/lucasgatsas.ch
+		Theme: by Lucas Gatsas
+		copy: by Lucas Gatsas
+		Web: www.lucasgatsas.ch
+		Fr. 26. Feb. 2016 06:15:13
+
+	-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting Started with Javascript</title>
+  <meta name="description" content="Getting Started with Javascript.">
+  <link rel="canonical" href="http://blog.lucasgatsas.ch/event/getting-started.html">
+  <link rel="alternate" type="application/rss+xml" title="Javascript" href="http://blog.lucasgatsas.ch/feed.xml">
+  <link rel="stylesheet" href="/assets/css/style-v=cba79c2df0.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-v=cba79c2df0.css" />
+      <link rel="shortcut icon" href="https://glynrob.com/wp-content/uploads/js-logo-150x150.png">
+    <link rel="icon" href="https://glynrob.com/wp-content/uploads/js-logo-150x150.png" type="image/x-icon">
+    <!-- Facebook Meta Data -->
+<meta property="og:image" content="http://spaceg.github.io/img/Pi2ModB1GB_-comp.jpg"/>
+<meta property="og:locality" content="St. Gallen"/>
+<meta property="og:country-name" content="Switzerland"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Lucas Gatsas, Front -End Engineer, SYS-Admin & UI/UX Designer from St. Gallen, Switzerland"/>
+<meta property="og:url" content="http://spaceg.github.io/"/>
+<meta property="og:site_name" content="www.lucasgatsas.ch"/>
+<meta name="robots" content="index, follow">
+<meta name="robots" content="all">
+<style>
+
+</style>
+
+
+</head>
+
+
+<body class="home-template">
+  <div id="page" class="site">
+
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-256.png" alt="logo" style="
+    height: 50px;
+"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                 
+                    <li>
+                        <a href="/archive">Archive</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<header class="site-header">
+    <div class="inner-wide">
+      <!--  <h1 class="site-title"><a href="/"><img src="http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-256.png" alt="logo"></a></h1>-->
+        <nav class="site-navigation" role="navigation">
+    <h2 class="screen-reader-text">Explore Website</h2>
+    <ul class="menu">
+        <li class="menu-item home current-menu-item" role="presentation"><a href="http://www.lucasgatsas.ch">Home</a></li>
+         
+          
+            
+                <a class="page-link" href="/about/">About</a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+    </ul><!-- .menu -->
+</nav><!-- .site-navigation -->
+
+        <a class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+    </div><!-- .inner-wide -->
+</header><!-- .site-header -->
+        
+
+<div class="sidebar">
+    <div class="sidebar-scrollable">
+        <div class="widget-area">
+                <nav class="site-navigation" role="navigation">
+    <ul class="menu">
+ 
+    </ul><!-- .menu -->
+</nav><!-- .site-navigation -->
+
+            <aside class="widget widget-text">
+                <h1 class="site-title"><a href="/"><img src="http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-256.png" alt="logo"></a></h1>
+                <h2 class="widget-title">This is my Developer Blog About Javascript</h2>
+                <p>I will write here about my Development Skills and Learnings. So feel free to Contact me in anyway to give some good infos.</p>
+            </aside><!-- .widget -->
+            <aside class="widget widget-newsletter">
+                <h2 class="widget-title">My  Newsletter</h2>
+                <p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->
+            </aside><!-- .widget -->
+            <aside class="widget widget-text">
+                <h2 class="widget-title">Contact</h2>
+                <p>We accept collaborations/sponsored posts so please contact us to discuss. We would love to hear from you, even if it is to say hello!</p>
+                <ul class="contacts">
+                    <li><span class="icon icon-envelope" aria-hidden="true"></span> space at lucasgatsas.ch</li>
+                    <li><span class="icon icon-map-marker" aria-hidden="true"></span> 9000, St. Gallen, CH - Switzerland</li>
+                </ul>
+            </aside><!-- .widget -->
+        </div><!-- .widget-area -->
+        <a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+    </div><!-- .sidebar-scrollable -->
+</div><!-- .sidebar -->
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+
+
+<!--
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+   
+    <h2 class="post-date"><time datetime="2016-06-14T00:00:00+02:00" itemprop="datePublished">June 14, 2016</time></h2>
+    <h3 class="post-time">From  to </h3>
+  </header>
+
+
+
+ 
+</article> --> 
+        
+
+
+        <article class="post tag-music tag-science" itemscope itemtype="http://schema.org/BlogPosting">            
+            <header class="cover post-header">
+
+
+             
+                <div class="post-bg" style="background-image:url(/https://raw.githubusercontent.com/bkimminich/juice-shop/master/app/public/images/JuiceShop_Logo.png);"></div>
+
+                <div class="cover-content">
+                    <div class="inner">
+                     <!--   <div class="tag-links">
+                            <a href="../tag/music/index.html">Music</a><a href="../tag/science/index.html">Science</a>
+                        </div>--> <!-- .tag-links -->
+                        <h1 class="post-title">Getting Started with Javascript</h1>
+                        <div class="post-meta">
+                            by <span class="post-author"><a href="/about" itemscope itemtype="http://schema.org/Person">  Lucas Gatsas</a></span> on <time class="published" datetime="2015-10-05" datetime="2016-06-14T00:00:00+02:00" itemprop="datePublished" >Jun 14, 2016</time> <span class="reading-time"> <span class="eta"></span></span>
+                        </div><!-- .post-meta -->
+                        <a href="#" class="scroll-down square light icon-chevron-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+            </header><!-- .cover -->
+            <div class="post-content inner">
+                <p></p>
+
+<p>
+
+
+   <h2 class="section-heading">Getting Started with Javascript.</h2>
+
+<p>What am I learning?
+This is JavaScript (JS), a programming language. There are many languages, but JS has many uses and is easy to learn.</p>
+
+<p>What can we use JavaScript for?</p>
+
+<p>make websites respond to user interaction
+ build apps and games (e.g. blackjack)
+ access information on the Internet (e.g. find out the top trending words on Twitter by topic)
+ organize and present data (e.g. automate spreadsheet work; data visualization)</p>
+
+<p>confrim method:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="n">confirm</span><span class="p">(</span><span class="s1">'This is an example of using JS to create some interaction on a website. Click OK to continue!'</span><span class="p">);</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">What is programming?</h2>
+<p>Programming is like writing a list of instructions to the computer so it can do cool stuff with your information.</p>
+
+<p>Programs can’t yet make your bed, but they can do math, keep track of your bank account, or send a message to a friend.</p>
+
+<p>To do any of these actions, the program needs an input. You can ask for input with a prompt.</p>
+
+<p>Examples:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="n">prompt</span><span class="p">(</span><span class="s2">"what is your name?"</span><span class="p">);</span>
+<span class="n">prompt</span><span class="p">(</span><span class="s2">"my name is Lucas Gatsas"</span><span class="p">);</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">
+Data Types I &amp; II: Numbers &amp; Strings</h2>
+
+<p>Data comes in various types. You have used two already!</p>
+
+<p>a. numbers are quantities, just like you’re used to. You can do math with them.</p>
+
+<p>b. strings are sequences of characters, like the letters a-z, spaces, and even numbers. These are all strings: “Ryan”, “4” and “What is your name?” Strings are extremely useful as labels, names, and content for your programs.</p>
+
+<p>To make a number in your code, just write a number as numerals without quotes: 42, 190.12334.</p>
+
+<p>To write a string, surround words with quotes: “What is your name?”</p>
+
+<p>Write a string with at least 3 words. Check out the examples of strings above.
+Find the length of the string by writing a period (full stop) and the word length, like this:</p>
+
+<p>“string”.length
+Length counts every character in the string - including spaces!</p>
+
+<p>“lucas are studying”.length  = 18 types</p>
+
+<p>3 words</p>
+
+<h2 class="section-heading">Data Type III: Booleans</h2>
+
+<p>Nice job! Next let’s look at booleans. A boolean is either true or false.</p>
+
+<p>For example, comparing two numbers returns a true or false result:</p>
+
+<p>23 &gt; 10 is true
+5 &lt; 4 is false</p>
+
+<p>Let’s compare two numbers to return a true result:</p>
+
+<p>First, write the string “I’m coding like a champ”
+Next, find the length of the string using .length
+Then, compare the string’s length to see if it is greater than 10
+If you want to check your code, click “Stuck? Get a hint!” below.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="s2">"Lucas is a great coder!"</span><span class="p">.</span><span class="nf">length</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Using console.log</h2>
+<p>You may have noticed that the interpreter doesn’t print out every single thing it does. So if we want to know what it’s thinking, we sometimes have to ask it to speak to us.</p>
+
+<p>console.log() will take whatever is inside the parentheses and log it to the console below your code—that’s why it’s called console.log()!</p>
+
+<p>This is commonly called printing out.</p>
+
+<h2 class="section-heading">Comparisons</h2>
+<p>So far we’ve learned about three data types:</p>
+
+<p>strings (e.g. “dogs go woof!”)
+numbers (e.g. 4, 10)
+booleans (e.g. false, 5 &gt; 4)
+Now let’s learn more about comparison operators.</p>
+
+<p>List of comparison operators:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="code"><pre>  <span class="o">&gt;</span> <span class="no">Greater</span> <span class="n">than</span>
+
+  <span class="o">&lt;</span> <span class="no">Less</span> <span class="n">than</span>
+
+    <span class="o">&lt;=</span> <span class="no">Less</span> <span class="n">than</span> <span class="n">or</span> <span class="n">equal</span> <span class="n">to</span>
+
+    <span class="o">&gt;=</span> <span class="no">Greater</span> <span class="n">than</span> <span class="n">or</span> <span class="n">equal</span> <span class="n">to</span>
+
+  <span class="o">===</span> <span class="no">Equal</span> <span class="n">to</span>
+
+  <span class="o">!==</span> <span class="no">Not</span> <span class="n">equal</span> <span class="n">to</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="sr">//</span> <span class="no">Here</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span> <span class="n">using</span> <span class="n">the</span> <span class="n">greater</span> <span class="n">than</span> <span class="p">(</span><span class="o">&gt;</span><span class="p">)</span> <span class="n">operator</span><span class="p">.</span>
+<span class="nf">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="mi">15</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">);</span> <span class="sr">//</span> <span class="mi">15</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="n">evaluates</span> <span class="n">to</span> <span class="kp">true</span><span class="p">,</span> <span class="n">so</span> <span class="kp">true</span> <span class="n">is</span> <span class="n">printed</span><span class="p">.</span>
+
+<span class="nf">/</span><span class="o">/</span> <span class="no">Fill</span> <span class="k">in</span> <span class="n">with</span> <span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">,</span> <span class="o">===</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">following</span> <span class="nb">print</span> <span class="n">out</span> <span class="ss">true:
+</span><span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"Xiao Hui"</span><span class="p">.</span><span class="nf">length</span> <span class="o">&lt;</span> <span class="mi">122</span><span class="p">);</span>
+<span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"Goody Donaldson"</span><span class="p">.</span><span class="nf">length</span> <span class="o">&gt;</span>  <span class="mi">8</span><span class="p">);</span>
+<span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="mi">2</span> <span class="o">===</span> <span class="mi">16</span><span class="p">);</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Decisions, decisions</h2>
+<p>Nice work on comparisons! Now let’s see how we can use comparisons to ask yes or no questions.</p>
+
+<p>Say we want to write a program that asks whether your name is longer than 7 letters. If the answer is yes, we can respond with “You have a long name!” We can do this with an if statement:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="s2">"my name is lucas gatsas"</span><span class="p">.</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"you have a long name"</span><span class="p">);</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Computers are smart</h2>
+<p>Great! We used an if statement to do something if the answer to the condition was yes, or true as we say in JavaScript.</p>
+
+<p>In addition to doing something when the condition is true, we can do something else if the condition is false. For example, if your name is shorter than 7 letters, we can respond with “You have a short name!” We can do this using an if / else statement:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="s2">"Lucas Gatsas"</span><span class="p">.</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"Let's go down the first road!"</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> 
+<span class="p">{</span>
+    
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"you are the code champion!"</span><span class="p">)</span>
+    <span class="sr">//</span> <span class="no">What</span> <span class="n">should</span> <span class="n">we</span> <span class="k">do</span> <span class="k">if</span> <span class="n">the</span> <span class="n">condition</span> <span class="n">is</span> <span class="kp">false</span><span class="p">?</span> <span class="no">Fill</span> <span class="k">in</span> <span class="ss">here:
+    
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">More practice with conditionals</h2>
+<p>Now let’s practice using if/else statements. Do as much as you can by yourself, but if you need a reminder!</p>
+
+<ol>
+  <li>
+    <p>Write an if/else statement, just like we did in the last exercise. Here’s what the outline of the code looked like:</p>
+  </li>
+  <li>
+    <p>If your condition is true, use console.log to print “The condition is true”.</p>
+  </li>
+  <li>
+    <p>therwise (else) when it is false, use console.log to print “The condition is false”.</p>
+  </li>
+  <li>
+    <p>Make sure your condition evaluates to false, so that your program prints out “The condition is false”.</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="sr">//i</span><span class="n">f</span> <span class="n">condition</span> <span class="n">is</span> <span class="kp">true</span>
+     <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"The condition is true"</span><span class="p">);</span>
+     <span class="sr">//</span> <span class="k">do</span> <span class="n">this</span> <span class="n">code</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="sr">//</span><span class="s2">"otherwise"</span>
+<span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"The condition is false"</span><span class="p">);</span>
+
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Computers aren't that smart</h2>
+<p>Well done! Now, computers are very literal. Syntax needs to be in exactly the right place for the computer to understand the code.</p>
+
+<p>As you get started with programming, we will teach you many syntax rules. This is sort of like the grammar of programming languages. Grammar first, then programming poetry!</p>
+
+<p>There are many mistakes in this code. Find them and fix them all.</p>
+
+<p>You are doing what’s called “debugging,” a term popularized by Grace Hopper when she literally removed a moth from her computer.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="mi">10</span> <span class="o">===</span> <span class="mi">10</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"You got a true!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"You got a false!"</span><span class="p">);</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Mid-lesson breather</h2>
+<p>We’ve covered a lot of ground so far! So many new terms, so much syntax. Let’s take a breather and review. We have learned:</p>
+
+<ol>
+  <li>Confirm and prompt</li>
+</ol>
+
+<p>We can make pop-up boxes appear! 
+confirm(“I am ok”);
+prompt(“Are you ok?”);</p>
+
+<ol>
+  <li>Data types</li>
+</ol>
+
+<p>a. numbers (e.g. 4.3, 134)</p>
+
+<p>b. strings (e.g. “dogs go woof!”, “JavaScript expert”)</p>
+
+<p>c. booleans (e.g. false, 5 &gt; 4)</p>
+
+<ol>
+  <li>Conditionals</li>
+</ol>
+
+<p>If the first condition is met, execute the first code block. If it is not met, execute the code in the else block. See the code on the right for another example.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="sr">//</span> <span class="no">This</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span> <span class="n">an</span> <span class="k">if</span> <span class="sr">/ else statement.
+
+if (12 /</span> <span class="mi">4</span> <span class="o">===</span> <span class="s2">"Ari"</span><span class="p">.</span><span class="nf">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">confirm</span><span class="p">(</span><span class="s2">"Will this run the first block?"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">confirm</span><span class="p">(</span><span class="s2">"Or the second block?"</span><span class="p">);</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Math</h2>
+<p>We saw basic math before. The basic math symbols we learned in school work here. Even the order in which the computer understands the math is the same as in school!</p>
+
+<p>Code:</p>
+
+<ol>
+  <li>( ): control order of operations</li>
+  <li>
+    <ul>
+      <li>and /: multiplication and division</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>and +: subtraction and addition</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Examples:</p>
+
+<ol>
+  <li>100/10 evaluates to 10</li>
+  <li>“Jane”.length + 5 evaluates to 9</li>
+  <li>5*(3+1) evaluates to 20</li>
+</ol>
+
+<p>Complete the missing bits of code to construct the if / else statement. Make the condition evaluate to true.
+Finish the else statement by printing out the string “Error Error Error” to the console.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="s2">"Jon"</span><span class="p">.</span><span class="nf">length</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"The answer makes sense!"</span><span class="p">);</span>
+<span class="p">}</span> 
+<span class="k">else</span> 
+<span class="p">{</span>
+    <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">"Error Error Error"</span><span class="p">);</span>
+
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 class="section-heading">Math and the modulo</h2>
+<p>Let’s meet an interesting symbol called modulo. When % is placed between two numbers, the computer will divide the first number by the second, and then return the remainder of that division.</p>
+
+<p>So if we do 23 % 10, we divide 23 by 10 which equals 2 with 3 left over. So 23 % 10 evaluates to 3.</p>
+
+<p>More examples:</p>
+
+<p>17 % 5 evaluates to 2</p>
+
+<p>13 % 7 evaluates to 6</p>
+
+<p>Use console.log and modulo three times to print the remainder of the following equations:</p>
+
+<p>a. 14 / 3</p>
+
+<p>b. 99 / 8</p>
+
+<p>c. 11 / 3</p>
+
+
+</p>
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//lucasgatsas.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<!--
+<p class="full-width">  
+<img src="../content/images/2015/10/ice-3.jpg" alt="" />
+</p>
+-->
+
+<!--
+<blockquote>
+  <p>“ice contains no future , just the past, sealed away. As if they're alive, everything in the world is sealed up inside, clear and distinct. Ice can preserve all kinds of things that way- cleanly, clearly. That's the essence of ice, the role it plays.” 
+  <cite>― Haruki Murakami</cite></p>
+</blockquote>
+--> 
+
+<!--
+<p class="full-width">  
+<img src="../content/images/2015/10/ice-1-1.jpg" alt="" />
+</p>
+--> 
+
+
+        <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/event/getting-started-with-javascript.html" data-toggle="tooltip" data-placement="top" title="Javascript Introduction">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/event/consolelog-javascript-browser.html" data-toggle="tooltip" data-placement="top" title="Consolelog with the Browser Console">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+
+
+        <div>
+            <a href='mailto:lucasgatsas@gmail.com?subject=Register interest for Getting Started with Javascript on June 14, 2016&body=Hi! Im interested in your event. Can I come please?' class="button button-primary">Kontakt</a>
+        </div>
+
+            </div><!-- .post-content -->
+            <footer class="post-footer inner">
+                <div class="share-post">
+                    <span>Share</span>
+                    <a class="icon-twitter square" target="_blank" href="http://twitter.com/share?text=&url="><span class="screen-reader-text">Twitter</span></a>
+                    <a class="icon-facebook square" target="_blank" href="http://wwww.facebook.com/sharer.php?"><span class="screen-reader-text">Facebook</span></a>
+                    <a class="icon-google square" target="_blank" href="http://plus.google.com/share?url=/"><span class="screen-reader-text">Google+</span></a>
+                </div>
+                <div class="author-box">
+
+  
+
+
+                    <img src="https://pbs.twimg.com/profile_images/723053836072525824/ar2FMuaP_400x400.jpg" alt="Jane Doe" class="author-avatar" />
+
+
+
+  
+
+
+ 
+
+                    <h4 class="author-title">About <a href="">By Lucas Gatsas</a></h4>
+
+                     
+                    <p class="author-description">Lucas Gatsas, is a Web -Developer, Front -End Engineer & UI/UX Designer based in  St. Gallen, Switerland.
+</p>
+                    <p class="author-links">
+
+                        <span class="author-location"><i class="icon-map-marker" aria-hidden="true"></i> Switzerland</span>
+
+                        <span class="author-website"><i class="icon-chain" aria-hidden="true"></i> <a href="http://www.lucasgatsas.ch" target="_blank">http://lucasgatsas.ch</a></span> 
+                          <span class="author-website"><i class="icon-chain" aria-hidden="true"></i> <a href="http://www.lucasgatsas.ch" target="_blank">lucasgatsas@gmail.com</a></span> 
+                        
+                    </p>
+                </div>                  
+            </footer><!-- .post-footer -->
+        </article><!-- .post -->
+
+
+        
+
+      </div>
+    </div>
+
+    
+<!--
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="inner-wide">
+      <div class="offsite-links">
+        <a href="http://www.twitter.com/lucasgatsas" class="icon-twitter"><span class="screen-reader-text">Twitter</span></a>
+        <a href="https://www.facebook.com/profile.php?id=100010261894353" class="icon-facebook"><span class="screen-reader-text">Facebook</span></a> 
+        <a href="https://plus.google.com/101826267816845608605" class="icon-google"><span class="screen-reader-text">Google+</span></a>
+        <a href="https://github.com/spaceg" class="icon-github"><span class="screen-reader-text">GitHub</span></a>
+        <a href="https://medium.com/@lucasgatsas" class="icon-medium"><span class="screen-reader-text">Medium</span></a>
+        <a href="http://instagram.com/lucasgatsas" class="icon-instagram"><span class="screen-reader-text">Instagram</span></a>
+        <a href="https://www.youtube.com/watch?v=3Zz7gLsN7fk" class="icon-youtube"><span class="screen-reader-text">YouTube</span></a>
+        <a href="http://blog.lucasgatsas.ch/feed.xml" class="icon-feed"><span class="screen-reader-text">RSS</span></a>
+      </div>
+      <a href="#" class="top-link square icon-chevron-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+    </div>
+  </div>
+  <div class="site-info inner-wide">
+    <p>&copy;. 2014 - 2016 by <a href="index.html">   Javascript  </a> <br>all rights reserved. <br /> <a target="_blank" href="http://www.lucasgatsas.ch"> </a>      This site is built with <a href="http://rubyonrails.org/" target="_blank"> Ruby on Rails </a>
+ </p>   
+  </div>
+</footer> --> 
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Lucas Gatsas</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+<!-- jQuery -->
+
+
+
+  <script src="/assets/js/plugins-v=cba79c2df0.js"></script>
+  <script src="/assets/js/custom-v=cba79c2df0.js "></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- New Coding from insperation of the glas theme : http://www.github.com/spaceg/glas
+
+-->
+<script src="/assets/js/plugins-v=cba79c2df0.js"></script>
+<script src="/assets/js/custom-v=cba79c2df0.js"></script>
+
+
+
+
+
+            <div class="overlay"></div>
+  </div><!-- #page -->  
+
+
+    <script id="dsq-count-scr" src="//lucasgatsas.disqus.com/count.js" async></script>
+
+  </body>
+
+</html>
